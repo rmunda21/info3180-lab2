@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% block main %}
+<div class="profile-container">
+    <div class="profile-container-top">
+        <img src="{{url_for('static',filename='photos/profile.png')}}">
+        <h4>Ricardo Munda</h4>
+        <p class="profile-container-top-uname">@rmunda</p>
+        <p class="profile-container-top-location">Portmore, Jamaica</p>
+        <p class="profile-container-top-date">Joined {{date}}</p>
+    </div>
+    <div class="profile-container-bottom">
+        <p class="profile-container-bottom-bio">I am a second year student at The University of the West Indies Mona
+            who enjoys Web Development.
+        </p>
+        <div class="profile-container-bottom-stats">
+            <p>1000<br><span>Post</span></p>
+            <p>1M<br><span>Followers</span></p>
+            <p>0<br><span>Following</span></p>
+        </div>
+        <button class="follow-btn">Follow</button>
+    </div>
+</div>
+{% endblock %}
